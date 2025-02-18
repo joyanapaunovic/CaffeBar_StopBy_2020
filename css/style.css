@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  --red: #9B1212;
+  --myColor: #252525;
+}
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/****INDEX****/
+/**nav**/
+nav .container #logo a img {
+  width: 100px;
+}
+
+#listMenu {
+  margin-top: 20px;
+}
+
+#listMenu li a {
+  color: var(--red);
+  font-size: 16px;
+}
+
+#listMenu li:hover {
+  color: rgba(152, 18, 18, 0.8);
+}
+
+/**slider**/
+#sliderPics {
+  background-size: cover;
+}
+
+#sliderPics .carousel-item {
+  width: 100%;
+  max-height: 600px;
+}
+
+#sliderPics .carousel-item img {
+  width: 100%;
+  background-size: cover;
+}
+
+#firstTitle {
+  margin-bottom: 40px;
+  text-shadow: 0px 1px 1px var(--myColor);
+}
+
+.card {
+  width: 380px;
+  border: 1px solid var(--myColor);
+  border-radius: 0px 0px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.card .card-body p {
+  font-size: 16px;
+}
+
+/**reviews**/
+#reviews {
+  background-color: var(--myColor);
+  padding: 15px; 
+  margin-bottom: 10px;
+  border-radius: 0px !important;
+}
+
+#reviews #secondTitle {
+  margin-bottom: 20px;
+}
+
+#reviews .row .card {
+  border: 3px solid var(--myColor);
+}
+
+#reviews .row .user {
+  font-size: 32px;
+  color: var(--red);
+}
+
+#reviews .row .star .starIco {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffff00;
+  margin-left: 5px;
+}
+
+/**notification for covid 19**/
+.container-fluid .row #notification {
+  background-color: #252525;
+  color: #fff;
+  margin-bottom: 20px;
+  border: 3px solid var(--myColor);
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container-fluid .row #notification h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #808080;
+}
+
+.container-fluid .row #notification p {
+  font-size: 16px;
+}
+
+/**footer**/
+footer {
+  background-color: var(--myColor);
+}
+
+footer form {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+footer form #text {
+  color: #a0a0a0;
+  text-align: center;
+}
+
+footer form input[type='text'] {
+  margin-bottom: 10px;
+  border: 3px solid #808080;
+}
+
+footer form input[type='text']:hover {
+  border: 3px solid var(--red);
+}
+
+footer form input[type='password'] {
+  margin-bottom: 10px;
+  border: 3px solid #808080;
+}
+
+footer form input[type='password']:hover {
+  border: 3px solid var(--red);
+}
+
+footer form input[type='email'] {
+  margin-bottom: 10px;
+  border: 3px solid #808080;
+}
+
+footer form input[type='email']:hover {
+  border: 3px solid var(--red);
+}
+
+footer form .btn:hover {
+  color: var(--red);
+}
+
+footer form .btn i {
+  margin-left: 10px;
+}
+
+footer form .btn i:hover {
+  color: var(--red);
+}
+
+footer form #joinNow {
+  background-color: var(--red);
+  color: #fff;
+}
+
+footer form #joinNow:hover {
+  font-weight: bold;
+}
+
+footer #footerSecondDiv {
+  margin: 0px;
+  margin-top: 40px;
+}
+
+footer #footerSecondDiv span {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #a0a0a0;
+}
+
+footer #footerSecondDiv p {
+  margin-top: 10px;
+}
+
+footer #footerSecondDiv p i {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #a0a0a0;
+}
+
+footer #footerSecondDiv #socials {
+  margin-top: 50px;
+}
+
+footer #footerSecondDiv #socials span {
+  font-size: 18px;
+  color: #a0a0a0;
+}
+
+footer #footerSecondDiv #socials #socIcons {
+  margin-top: 10px;
+}
+
+footer #footerSecondDiv #socials #socIcons i {
+  padding-left: 5px;
+  color: #ffffff;
+  font-size: 19px;
+}
+
+footer #footerSecondDiv #socials #socIcons i:hover {
+  font-weight: bold;
+  color: var(--red);
+}
+
+#afterFooter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #202020;
+}
+
+#afterFooter span {
+  color: #606060;
+}
+
+#afterFooter a {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+#afterFooter a:hover {
+  font-weight: bold;
+  color: var(--red);
+}
+
+/***media queries***/
+@media (max-width: 575px) {
+  #firstTitle {
+    font-size: 31px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #afterFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/***ABOUT US***/
+/**slider**/
+#sliderAboutUs {
+  background-size: cover;
+}
+
+#sliderAboutUs .carousel-item {
+  width: 100%;
+  max-height: 600px;
+}
+
+#sliderAboutUs .carousel-item img {
+  width: 100%;
+  background-size: cover;
+}
+
+.container-fluid div h1 {
+  text-shadow: 0px 1px 1px var(--myColor);
+}
+
+#AboutUsText p {
+  text-indent: 40px;
+  font-size: 16px;
+}
+
+#AboutUsText p #textRed {
+  color: var(--red);
+  font-weight: bold;
+}
+
+#pics {
+  margin-top: 50px;
+}
+
+#pics div {
+  margin-bottom: 30px;
+}
+
+#pics div .titlePic {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 16px;
+}
+
+/***after pics***/
+.container p {
+  font-size: 16px;
+}
+
+.container .arrow {
+  color: var(--red);
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+.container .arrow1 {
+  color: #500306;
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+.container .textBlack {
+  color: #000;
+}
+
+.container #biggerText {
+  font-size: 18px;
+}
+
+/***cards***/
+#cards {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#cards .card {
+  background-color: var(--myColor);
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 3px solid var(--red);
+  border-radius: 20px;
+}
+
+#cards .card-body .card-title {
+  margin-bottom: 10px;
+}
+
+#cards .card-body .card-text {
+  text-indent: 25px;
+}
+
+/***DRINK LIST***/
+#sliderDrinkList {
+  background-size: cover;
+}
+
+#sliderDrinkList .carousel-item {
+  width: 100%;
+  max-height: 600px;
+}
+
+#sliderDrinkList .carousel-item img {
+  width: 100%;
+  background-size: cover;
+}
+
+.container .row div {
+  margin-bottom: 15px;
+}
+
+.container .row div h1, .container .row div h3 {
+  text-shadow: 0px 1px 1px var(--myColor);
+}
+
+.container .row .table1 {
+  margin-bottom: 20px;
+}
+
+.mainCol {
+  text-transform: uppercase;
+  color: #c0c0c0;
+}
+
+/***AUTHOR***/
+#logo1 {
+  width: 100%;
+  text-align: center;
+}
+
+#logo1 a img {
+  width: 100px;
+}
+
+#navigation {
+  background-color: #fff;
+}
+
+#navigation div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  text-align: center;
+}
+
+#navigation div ul li {
+  padding: 10px;
+}
+
+#navigation div ul li a {
+  color: var(--red);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#hamburger {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#mobile-links li a {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.fullWidth {
+  width: 100%;
+  background-color: var(--myColor);
+  background-image: url("../img/backgroundAuthor.gif");
+  background-repeat: no-repeat;
+  background-size: 1081px 1003px;
+}
+
+.fullWidth .row #mainThings {
+  margin-top: 50px;
+}
+
+.fullWidth .row #mainThings h5 {
+  color: #fff;
+}
+
+.fullWidth .row #mainThings #info {
+  margin-top: 90px;
+}
+
+.fullWidth .row #mainThings p {
+  color: #fff;
+}
+
+.fullWidth .row #mainThings p i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fullWidth .row #mainThings p a {
+  color: #c0c0c0;
+  text-decoration: none;
+}
+
+.fullWidth .row #mainThings p a:hover {
+  color: var(--red);
+}
+
+.fullWidth .row #author {
+  width: 300px;
+}
+
+.fullWidth .row #author img {
+  width: 100%;
+}
+
+#pageFooter {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#pageFooter .row #footerTitle {
+  margin-top: 78px;
+}
+
+#pageFooter .row #infoList {
+  margin-top: 60px;
+}
+
+.modal .modal-dialog .modal-content .modal-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+#buttonPopUp {
+  padding: 8px;
+  color: var(--red);
+  font-size: 15px;
+  margin-left: 100px;
+}
+/*# sourceMappingURL=style.css.map */
